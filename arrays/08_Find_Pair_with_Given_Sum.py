@@ -1,7 +1,7 @@
 """
 Problem: Two Sum
 Platform: LeetCode
-Link: https://leetcode.com/problems/two-sum/
+Link: https://leetcode.com/problems/two-sum/submissions/1923021572/
 
 Submission Date: Feb 18, 2026 13:23
 

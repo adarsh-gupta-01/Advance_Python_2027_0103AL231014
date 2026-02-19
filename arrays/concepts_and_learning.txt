@@ -110,6 +110,25 @@ Learning:
 6. Loop ke andar conditional decision making强 hui.
 7. Soch improve hui ki useful values ko overwrite karne se kaise bachein.
 
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+12.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Learned mathematical approach using sum formula.
+2. Used formula for sum of first n natural numbers:
+       n * (n + 1) / 2
+3. Understood how to subtract actual sum from expected sum.
+4. Strengthened understanding of arithmetic series.
+5. Practiced integer conversion using int().
+6. Learned alternative to hashing approach (O(1) space).
+
+Concept:
+- Calculate expected sum from 0 to n.
+- Calculate actual sum of array.
+- Missing number = expected sum - actual sum.
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 13.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -147,6 +166,19 @@ Concept:
 - Intersection operator (&) use karo.
 - Result ko wapas list mein convert karo.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+15.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+Learning:
+1. Learned how to use set union operator:
+       set1 | set2
+2. Understood that sets automatically remove duplicates.
+3. Practiced converting set to list and sorting result.
+4. Strengthened understanding of union operation in Python.
+5. Improved clarity on logical operator vs set operator difference.
+
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 16. Check if Two Arrays are Equal or Not
@@ -168,6 +200,25 @@ Concept:
 - First array ke elements ki frequencies count karo.
 - Second array traverse karte waqt frequency decrease karo.
 - Agar koi mismatch ho → False return karo.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+17.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Learned that leaders are best found by traversing from right to left.
+2. Understood why last element is always a leader.
+3. Used a variable (mx) to track maximum from right side.
+4. Practiced reverse traversal using:
+       range(n-1, -1, -1)
+5. Learned why we reverse the answer at the end.
+6. Strengthened thinking in greedy + max tracking problems.
+
+Concept:
+- Start from last element (always a leader).
+- Move left while tracking maximum.
+- If current element >= max so far → it is a leader.
+- Reverse result at end to maintain original order.
 
 
 ═══════════════════════════════════════════════════════════════════════════════

@@ -1,7 +1,7 @@
 """
 Problem: Move Zeroes
 Platform: LeetCode
-Link: https://leetcode.com/problems/move-zeroes/
+Link: https://leetcode.com/problems/move-zeroes/submissions/1922852306/
 
 Submission Date: Feb 18, 2026 10:34
 
