@@ -11,16 +11,6 @@ Points Scored: 2 / 2
 Total Score: 142
 Time Taken: 0.46 seconds
 
-Mistakes Identified & Corrected:
-1. Python uses capitalized boolean values:
-       False and True
-   (not false or true)
-
-2. This condition was unnecessary:
-       if (arr[len(arr)-1] < arr[0]):
-   Because checking adjacent elements already ensures
-   whether the array is sorted.
-
 """
 
 class Solution:

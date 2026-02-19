@@ -9,14 +9,6 @@ Test Cases Passed: 362 / 362
 Runtime: 0 ms (Beats 100.00%)
 Memory: 20.54 MB (Beats 52.98%)
 
-Learning:
-1. Understood the Two-Pointer Technique.
-2. Learned how to modify array in-place.
-3. Used one pointer (i) to track unique elements.
-4. Used second pointer (j) to scan the array.
-5. Learned that function returns length of unique elements (i + 1).
-6. Practiced handling edge case: empty array.
-7. Strengthened understanding of sorted array property.
 """
 
 from ast import List

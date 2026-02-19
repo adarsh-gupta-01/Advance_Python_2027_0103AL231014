@@ -9,9 +9,6 @@ Points Scored: 1 / 1
 Total Score: 140
 Time Taken: 0.06 seconds
 
-Learning:
-1. Python does not use 'else if' like other languages.
-2. Python uses 'elif' for else-if conditions.
 """
 
 class Solution:

@@ -1,0 +1,175 @@
+═══════════════════════════════════════════════════════════════════════════════
+                     DSA ARRAYS - CONCEPTS AUR LEARNING                        
+═══════════════════════════════════════════════════════════════════════════════
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+02. Find Minimum and Maximum Element in an Array
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Python mein 'else if' nahi hota jaise dusri languages mein hota hai.
+2. Python mein 'elif' use karte hain else-if conditions ke liye.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+03. Sum of Array
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Python mein indentation bahut important hai.
+2. 'return' statement ko properly function ke andar align karna padta hai.
+3. Galat indentation se runtime ya syntax errors aate hain.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+06. Check if Array is Sorted
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Mistakes Identified & Corrected:
+1. Python mein boolean values capital letter se start hoti hain:
+       False aur True
+   (na ki false ya true)
+
+2. Ye condition unnecessary thi:
+       if (arr[len(arr)-1] < arr[0]):
+   Kyunki adjacent elements ko check karna hi kaafi hai ye confirm karne ke liye
+   ki array sorted hai ya nahi.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+07. Rotate Array
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Reversal Algorithm seekha array rotation ke liye.
+2. Samjha ki ye kyun zaroori hai:
+       k = k % len(nums)
+   Ye un cases ko handle karta hai jab k > n ho.
+
+Concept:
+Pura array reverse karo →
+Pehle k elements reverse karo →
+Baaki ke elements reverse karo →
+Final array right-rotate ho jata hai k steps se.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+08. Find Pair with Given Sum (Two Sum)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. HashMap (dictionary) based approach seekha.
+2. Complement technique samjhi:
+       find = target - num
+3. Seekha ki dictionary mein O(1) time mein existence check kar sakte hain.
+4. enumerate() ka use practice kiya index + value dono ke liye ek saath.
+5. Soch ko improve kiya brute-force O(n²) se optimized O(n) tak.
+6. Time-space tradeoff ki understanding strong hui.
+
+Concept:
+- Pehle dekhe hue numbers ko dictionary mein store karo.
+- Har element ke liye check karo ki uska complement already exist karta hai.
+- Agar haan → turant indices return kar do.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+09. Remove Duplicates from Sorted Array
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Two-Pointer Technique ko samjha.
+2. Seekha ki array ko in-place kaise modify karte hain.
+3. Ek pointer (i) use kiya unique elements track karne ke liye.
+4. Dusra pointer (j) use kiya array scan karne ke liye.
+5. Seekha ki function unique elements ki length return karta hai (i + 1).
+6. Edge case handle karna practice kiya: empty array.
+7. Sorted array property ki understanding strong hui.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+10. Merge Sorted Array
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Concept:
+- Dono arrays ke sabse bade elements compare karo.
+- Jo bada ho use end mein (k index pe) rakho.
+- Pointers ko accordingly move karo.
+- Tab tak continue karo jab tak nums2 fully merge na ho jaye.
+
+Learning:
+1. Backward two-pointer technique seekhi.
+2. Samjha ki end se kyun fill karna zaroori hai.
+3. Teen pointers use karna practice kiya:
+       i → nums1 ka last valid element
+       j → nums2 ka last element
+       k → nums1 ki last position (total size)
+4. Seekha ki extra space ke bina in-place kaise merge karte hain.
+5. Samjha ki ye check karna kyun important hai:
+       i >= 0
+   Index error avoid karne ke liye.
+6. Loop ke andar conditional decision making强 hui.
+7. Soch improve hui ki useful values ko overwrite karne se kaise bachein.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+13.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Strengthened understanding of set-based duplicate detection.
+2. Learned how to track seen elements efficiently.
+3. Practiced conditional membership check:
+       if num in seen
+4. Improved thinking about handling repeated elements.
+5. Understood time-space tradeoff (O(n) space used).
+6. Reinforced hashing fundamentals.
+
+Concept:
+- Traverse the array once.
+- If element already exists in set → it is a duplicate.
+- Otherwise, add it to the set.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+14. Intersection of Two Arrays
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Python sets ka use karna seekha.
+2. Samjha ki sets automatically duplicates remove kar dete hain.
+3. Set intersection operator ka use practice kiya:
+       set1 & set2
+4. Clean aur minimal code likhna improve hua.
+5. Seekha ki set ko list mein kaise convert karte hain list() se.
+6. Hashing-based operations ki understanding strong hui.
+
+Concept:
+- Dono arrays ko sets mein convert karo.
+- Intersection operator (&) use karo.
+- Result ko wapas list mein convert karo.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+16. Check if Two Arrays are Equal or Not
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Learning:
+1. Seekha ki frequency hashmap use karke arrays ko kaise compare karte hain.
+2. Samjha ki array lengths ko pehle check karna kyun important hai.
+3. dictionary.get(key, default) ka use practice kiya.
+4. Frequency counting technique strong hui.
+5. Seekha ki second array validate karte waqt counts ko kaise decrement karte hain.
+6. Samjha ki ye check karna kyun zaroori hai:
+       if count[num] < 0
+   Extra occurrences detect karne ke liye.
+7. O(n) comparison ki understanding improve hui instead of sorting (O(n log n)).
+
+Concept:
+- Agar lengths different hain → arrays equal nahi ho sakte.
+- First array ke elements ki frequencies count karo.
+- Second array traverse karte waqt frequency decrease karo.
+- Agar koi mismatch ho → False return karo.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                                    END                                         
+═══════════════════════════════════════════════════════════════════════════════

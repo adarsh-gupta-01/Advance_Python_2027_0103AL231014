@@ -17,12 +17,13 @@ from typing import List
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
-        num = 0
+        j = 0
         for i in range(0, len(nums)):
             if (nums[i] != 0):
-                nums[num] = nums[i]
-                num += 1
+                nums[j] = nums[i]
+                j += 1
         
-        while (num < len(nums)):
-            nums[num] = 0
-            num += 1
+        while (j < len(nums)):
+            nums[j] = 0
+            j += 1
+            
