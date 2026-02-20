@@ -13,11 +13,9 @@ Test Cases Passed: 1115 / 1115
 
 class Solution:
     def reverseArray(self, arr):
-        # Initialize two pointers
         l = 0
         r = len(arr) - 1 
         
-        # Swap elements until pointers meet
         while l < r:
             arr[l], arr[r] = arr[r], arr[l]
             l += 1 

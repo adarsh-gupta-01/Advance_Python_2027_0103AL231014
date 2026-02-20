@@ -110,6 +110,21 @@ Learning:
 6. Loop ke andar conditional decision making强 hui.
 7. Soch improve hui ki useful values ko overwrite karne se kaise bachein.
 
+11.
+
+Learning:
+1. Strengthened Two-Pointer Technique.
+2. Learned in-place removal without extra space.
+3. Understood how to overwrite unwanted elements.
+4. Practiced swapping logic during traversal.
+5. Improved thinking about returning new valid length.
+6. Reinforced O(1) space modification.
+
+Core Idea:
+- Use pointer r to track position of next valid element.
+- Traverse array.
+- If current element != val → swap into valid position.
+- Return r as new length.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 12.
@@ -242,6 +257,59 @@ Concept:
 - If (curr_sum - k) was seen before,
   then a valid subarray exists.
 - Add frequency of that prefix sum to count.
+
+21
+
+
+Learning:
+1. Learned how sorting can directly solve order-statistics problems.
+2. Understood indexing logic:
+       nth largest → nums[n - k]
+3. Strengthened zero-based indexing clarity.
+4. Practiced Python’s built-in sort().
+5. Improved understanding of trade-off between simplicity and optimality.
+
+Core Idea:
+- Sort the array in ascending order.
+- Kth largest element will be at index (n - k).
+
+22
+
+Learning:
+1. Learned Kadane’s Algorithm.
+2. Understood dynamic programming approach in O(n).
+3. Practiced maintaining two variables:
+       curr_sum → best subarray ending at current index
+       max_sum  → best subarray overall
+4. Learned decision logic:
+       Either start fresh from nums[i]
+       OR extend previous subarray.
+5. Strengthened greedy + DP hybrid thinking.
+6. Improved handling of negative numbers in arrays.
+
+Core Idea:
+At each index, decide:
+- Start new subarray from current element
+- OR continue previous subarray
+
+Take maximum at every step.
+
+24
+
+Learning:
+1. Learned stable rearrangement technique.
+2. Understood alternating index placement.
+3. Practiced using two pointers for even/odd positions.
+4. Strengthened thinking about preserving original order.
+5. Improved handling of constraint:
+       Equal number of positives and negatives.
+6. Reinforced index jumping by +2 logic.
+
+Core Idea:
+- Use even indices (0,2,4,...) for positive numbers.
+- Use odd indices (1,3,5,...) for negative numbers.
+- Traverse original array once.
+- Place elements accordingly.
 
 25.
 

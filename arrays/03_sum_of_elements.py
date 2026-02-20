@@ -10,8 +10,6 @@ Accuracy: 100%
 Time Taken: 0.17 seconds
 
 """
-
-# User function Template for python3
 class Solution:
     def arraySum(self, arr):
         total = 0
