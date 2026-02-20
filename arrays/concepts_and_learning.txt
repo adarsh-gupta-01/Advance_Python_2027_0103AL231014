@@ -221,6 +221,107 @@ Concept:
 - Reverse result at end to maintain original order.
 
 
+19.
+
+
+Learning:
+1. Learned Prefix Sum technique.
+2. Understood why brute force O(n²) is inefficient.
+3. Used HashMap to store frequency of prefix sums.
+4. Key insight:
+       If curr_sum - k exists in prefix,
+       then a subarray with sum k exists.
+5. Practiced initializing prefix with:
+       {0: 1}
+   to handle subarrays starting from index 0.
+6. Strengthened frequency counting in dictionary.
+7. Improved thinking about cumulative sum problems.
+
+Concept:
+- Maintain running sum (curr_sum).
+- If (curr_sum - k) was seen before,
+  then a valid subarray exists.
+- Add frequency of that prefix sum to count.
+
+25.
+
+Learning:
+1. Learned Moore’s Voting Algorithm.
+2. Understood majority element appears more than n/2 times.
+3. Practiced candidate + counter logic.
+4. Strengthened greedy cancellation thinking.
+5. Improved understanding of O(1) space solutions.
+6. Learned that no extra hashmap is needed.
+7. Understood why final candidate is guaranteed majority.
+
+Core Idea:
+Pairs of different elements cancel each other.
+The element that survives is the majority element.
+
+26.
+
+Learning:
+1. Learned Binary Search on answer space.
+2. Understood how to avoid linear scan (O(n)).
+3. Practiced using mid comparison with mid + 1.
+4. Strengthened boundary shrinking logic.
+5. Improved thinking in logarithmic search patterns.
+6. Learned why peak is guaranteed to exist.
+
+Core Insight:
+If arr[mid] > arr[mid + 1],
+    peak lies on left side (including mid).
+Else,
+    peak lies on right side.
+
+We shrink search space until l == r.
+That index is a peak.
+
+
+27.
+
+Learning:
+1. Learned how to solve in O(n) time and O(1) extra space.
+2. Understood why negatives and numbers > n are irrelevant.
+3. Used index marking technique instead of extra array.
+4. Learned how to use sign marking (negative value as visited flag).
+5. Strengthened understanding of in-place array manipulation.
+6. Improved ability to handle Hard-level constraint-based problems.
+7. Realized that sorting or sum formula approach is incorrect here.
+
+Core Insight:
+If number x exists in array and 1 <= x <= n,
+then mark index (x - 1) as negative.
+
+First index that remains positive → missing number.
+
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+
+        # Submit kar diya hai but abhi ise acche se samjhke khud se krna hai 
+        
+        n = len(nums)
+
+        # Step 1: Replace negatives and >n numbers
+        for i in range(n):
+            if nums[i] <= 0 or nums[i] > n:
+                nums[i] = n + 1
+
+        # Step 2: Mark numbers as negative
+        for num in nums:
+            val = abs(num)
+            if val <= n:
+                nums[val - 1] = -abs(nums[val - 1])
+
+        # Step 3: Find first positive index
+        for i in range(n):
+            if nums[i] > 0:
+                return i + 1
+
+        return n + 1
+
+
+
 ═══════════════════════════════════════════════════════════════════════════════
                                     END                                         
 ═══════════════════════════════════════════════════════════════════════════════
